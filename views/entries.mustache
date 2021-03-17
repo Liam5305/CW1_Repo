@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+
+    <h1>{{title}}</h1>
+    <br>
+    {{#entries}}
+    <br>
+    <div class="box">
+        
+    <br>
+        <div class="card" data-id="{{id}}>
+            <div class="card-header">
+                {{type}}
+            </div>
+    <br>
+        <div class="card-body">
+            <div class="class-text">
+                {{exercise}}
+            </div>
+        </div>
+    <br>
+        <div class="card-text">
+            {{period}}
+        </div>
+    <br>
+        <div class="card-text">
+            {{date}}
+        </div>
+    <br>
+        <div class="radio-buttons">
+            <input type="radio" id="Complete" value="yes">
+            <label for="yes">Complete</label>
+        </div>
+    <br>
+        <div class="text-right">
+        <a href="/edit" class="btn btn-primary">
+        Edit Entry
+        </a>
+    </div>
+    <br>
+        <div class="text-right">
+        <a href="/remove" class="btn btn-primary">
+        Delete Entry
+        </a>
+    </div>
+    {{/entries}} {{^entries}} No entries yet :-(. {{/entries}}
+    <br>
+    <div class="text-right">
+        <a href="/new" class="btn btn-primary">
+        Write a new training log!
+        </a>
+    </div>
+</body>
+
+</html>
