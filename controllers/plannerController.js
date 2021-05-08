@@ -153,7 +153,7 @@ exports.show_new_entries = function(req, res) {
 }
 
 exports.post_login = function(req, res) {
-    res.redirect('/agenda');
+    res.redirect('/');
 }
 
 exports.logout = function(req, res) {
@@ -173,23 +173,32 @@ exports.not_found = function(err, req, res, next) {
     res.send('We didn\'t find what you were looking for ( ͠° ͟ʖ ͡°).');
 }
 
-// Pages not implemented yet below
 exports.confirm_shared_log = function(req, res) {
-    res.send('<h1>Not implemented yet</h1>');
+    res.render('share', {
+        'title': 'Share Log'
+    })
 }
 
 exports.edit_entry = function(req, res) {
-    res.send('<h1>Not implemented yet</h1>');
+    res.render('newEntry', {
+        'title': 'Edit Entry'
+    })
 }
 
 exports.show_overview = function(req, res) {
-    res.send('<h1>Not implemented yet</h1>');
+    res.render('overview', {
+        'title': 'Overview'
+    })
 }
 
-exports.show_schedule = function(req, res) {
-    res.send('<h1>Not implemented yet</h1>');
+exports.show_schedule= function(req, res) {
+    res.render('schedule', {
+        'title': 'Schedule'
+    })
 }
 
 exports.show_tracking = function(req, res) {
-    res.send('<h1>Not implemented yet</h1>');
+    res.render('tracking', {
+        'title': 'Tracking'
+    })
 }
