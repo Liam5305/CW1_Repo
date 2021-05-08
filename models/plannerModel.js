@@ -45,7 +45,7 @@ class activities {
             exercise: 'Reading a book',
             period: '1 hour',
             date: '14/03/2021',
-            author: 'Matthew'
+            author: 'John'
         })
         console.log('Third log removed');
 

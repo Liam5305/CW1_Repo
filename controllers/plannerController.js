@@ -97,7 +97,7 @@ exports.login_page = function(req, res) {
 exports.post_new_user = function(req, res) {
     const user = req.body.username;
     const password = req.body.pass;
-    //console.log("register user", user, "password", password);
+
 
     if (!user || !password) {
         res.status(401).send('no user or no password supplied');
@@ -115,7 +115,6 @@ exports.post_new_user = function(req, res) {
 
 exports.show_user_entries = function(req, res) {
     //extract the author name from the request and log it
-    //console.log('filtering request parameter:', req.params.author);
     
     let user = req.params.author;
     db.getEntriesByUser(user)
@@ -154,7 +153,6 @@ exports.show_new_entries = function(req, res) {
 }
 
 exports.post_login = function(req, res) {
-    //console.log('serializeUser wrote', req.session.passport.user);
     res.redirect('/agenda');
 }
 

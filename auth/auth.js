@@ -39,7 +39,6 @@ exports.init = function() {
             if (err) {
                 return cb(err);
             }
-            //console.log('user is:', user);
             cb(null, user);
         });
     });
