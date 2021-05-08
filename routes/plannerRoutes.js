@@ -44,6 +44,8 @@ router.post('/register', controller.post_new_user);
 
 router.get('/schedule', controller.show_schedule);
 
+router.get('/reschedule', controller.show_reschedule_page);
+
 router.get('/logout', controller.logout);
 
 router.use(function(req, res) {

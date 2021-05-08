@@ -41,6 +41,12 @@ exports.show_schedule = function(req, res) {
     });
 }
 
+exports.show_reschedule_page = function(req, res) {
+    res.render('reschedule', {
+        'title': 'Reschedule'
+    });
+}
+
 exports.delete_entry = function(req, res) {
     console.log("ID in delete_entry");
     res.send("<h1>Delete Entry Called.</h1>");
