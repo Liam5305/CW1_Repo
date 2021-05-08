@@ -1,10 +1,10 @@
-# CW2_Repo
+# Cousework 2
 
 # Team Fitness
 
-# Web Activity Planner
+    Web Activity Planner
 
-    This Web Activity Planner is a web application built on VSCode using Node.Js
+        This Web Activity Planner is a web application built on VSCode using Node.Js
 
 # To Run
 
