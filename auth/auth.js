@@ -4,7 +4,7 @@ const userModel = require('../models/userModel.js');
 const bcrypt = require('bcrypt');
 
 exports.init = function() {
-    // cb is callback
+    // cb is callback.
     passport.use(new Strategy(function(username, password, cb) {
         userModel.lookup(username, function(err, user) {
             console.log('lookup user', username);
